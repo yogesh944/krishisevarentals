@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Page</title>
+    <link rel="stylesheet" href="owner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+    <body>
+        <h1>Owner Page</h1>
+        <h3 style="position: relative; left: 10px; color: #2e8b57;"><a href="/krishiSevaRentals/home.html"><i class="fa-solid fa-house"></i>Home</a></h3>
+        <div class="container">
+            <form id="ownerForm">
+                <div class="form-group">
+                    <label for="ownerName">Owner Name:</label>
+                    <input type="text" id="ownerName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="machineImage">Upload Machine Image:</label>
+                    <input type="file" id="machineImage" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="machineDescription">Machine Description:</label>
+                    <textarea id="machineDescription" rows="4" placeholder="Enter machine description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="tel" id="contactNumber" placeholder="Enter contact number" required>
+                </div>
+                <button type="button" onclick="addMachine()">Submit</button>
+            </form>
+            <div class="preview" id="preview"></div>
+        </div>
+    
+        <script>
+            function addMachine() {
+                const ownerName = document.getElementById("ownerName").value;
+                const imageInput = document.getElementById("machineImage");
+                const machineDescription = document.getElementById("machineDescription").value;
+                const contactNumber = document.getElementById("contactNumber").value;
+    
+                if (!imageInput.files.length) {
+                    alert("Please upload a machine image.");
+                    return;
+                }
+    
+                const reader = new FileReader();
+                reader.onload = function () {
+                    const imageUrl = reader.result;
+    
+                    // Save machine details to local storage
+                    const machines = JSON.parse(localStorage.getItem("machines")) || [];
+                    machines.push({
+                        ownerName: ownerName,
+                        image: imageUrl,
+                        description: machineDescription,
+                        contactNumber: contactNumber
+                    });
+                    localStorage.setItem("machines", JSON.stringify(machines));
+    
+                    alert("Machine details added successfully!");
+                    document.getElementById("ownerForm").reset();
+                    showPreview(ownerName, imageUrl, machineDescription, contactNumber);
+                };
+                reader.readAsDataURL(imageInput.files[0]);
+            }
+    
+            function showPreview(ownerName, imageUrl, description, contactNumber) {
+                const preview = document.getElementById("preview");
+                preview.innerHTML = `
+                    <h3>Preview:</h3>
+                    <p><strong>Owner Name:</strong> ${ownerName}</p>
+                    <img src="${imageUrl}" alt="Machine Image">
+                    <p><strong>Description:</strong> ${description}</p>
+                    <p><strong>Contact:</strong> ${contactNumber}</p>
+                `;
+            }
+        </script>
+</body>
+</html>

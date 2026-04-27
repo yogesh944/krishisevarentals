@@ -1,0 +1,151 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-image: url('back.jpg');
+        background-size: cover; /* Pearl White */
+        color: #2E8B57; /* Farm Green */
+    }
+    h1 {
+        text-align: center;
+        color: #006400; /* Dark Farm Green */
+    }
+
+    .continer{
+        max-width: 700px;
+        margin: 60px auto;
+        padding: 20px;
+        background: beige;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input, textarea {
+        width: 70%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #2E8B57;
+        border-radius: 5px;
+        background-color: #F5F5F5; /* Pearl White */
+        color: #2E8B57; /* Farm Green */
+    }
+    button {
+        background-color: #006400; /* Dark Farm Green */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #2E8B57; /* Slightly lighter green */
+    }
+    .preview {
+        margin-top: 20px;
+        border-top: 2px solid #2E8B57;
+        padding-top: 15px;
+    }
+    img {
+        max-width: 200px;
+        display: block;
+        margin-bottom: 10px;
+        border: 2px solid #2E8B57;
+        border-radius: 5px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #F5F5F5; /* Pearl White */
+        color: #2E8B57; /* Farm Green */
+    }
+    h1 {
+        text-align: center;
+        color: #006400; /* Dark Farm Green */
+    }
+
+    h3 a{
+        color: #2E8B57;
+        text-decoration: none;
+    }
+    .container {
+        max-width: 700px;
+        margin: 60px auto;
+        padding: 20px;
+        background: beige;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input, textarea {
+        width: 70%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #2E8B57;
+        border-radius: 5px;
+        background-color: #F5F5F5; /* Pearl White */
+        color: #2E8B57; /* Farm Green */
+    }
+    button {
+        background-color: #006400; /* Dark Farm Green */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #2E8B57; /* Slightly lighter green */
+    }
+    .preview {
+        margin-top: 20px;
+        border-top: 2px solid #2E8B57;
+        padding-top: 15px;
+    }
+    img {
+        max-width: 100%; /* Makes images responsive */
+        display: block;
+        margin-bottom: 10px;
+        border: 2px solid #2E8B57;
+        border-radius: 5px;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .container {
+            margin: 20px auto;
+            padding: 15px;
+        }
+        input, textarea {
+            width: 90%; /* Use full width for smaller screens */
+        }
+        button {
+            width: 90%; /* Buttons take full width */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        body {
+            margin: 10px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        button {
+            font-size: 14px; /* Slightly smaller buttons on mobile */
+        }
+    }    

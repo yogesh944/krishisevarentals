@@ -1,0 +1,73 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #F5F5F5; /* Pearl White */
+        color: #2E8B57; /* Farm Green */
+    }
+    h1 {
+        color: #006400; /* Dark Farm Green */
+    }
+    .machine {
+        border: 2px solid #2E8B57; /* Farm Green */
+        background-color: #F5F5F5; /* Pearl White */
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    img {
+        max-width: 200px;
+        display: block;
+        margin-bottom: 10px;
+        border: 2px solid #2E8B57;
+        border-radius: 5px;
+    }
+    p {
+        margin: 5px 0;
+    }
+    button {
+        background-color: #006400; /* Dark Farm Green */
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #2E8B57; /* Slightly lighter green */
+    }
+
+     /* Responsive Styles */
+     @media (max-width: 768px) {
+        .machine {
+            padding: 10px;
+        }
+        button {
+            padding: 10px;
+            font-size: 14px;
+        }
+        img {
+            max-width: 90%; /* Shrinks images slightly for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            margin: 10px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .machine {
+            padding: 8px;
+        }
+        img {
+            max-width: 100%; /* Ensures images take full width on small screens */
+        }
+        button {
+            padding: 8px;
+            font-size: 12px;
+        }
+    }
+

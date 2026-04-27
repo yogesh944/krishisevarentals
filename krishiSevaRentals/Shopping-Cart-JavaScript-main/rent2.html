@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+<!------ Google Fonts ------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Karla:wght@200;300;400;500&family=Montserrat+Alternates:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS-->	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<!--External JS-->
+<script src="script.js" async></script>
+
+</head>
+
+<!----External CSS----->
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-----FontAwsome------>
+<script src="https://kit.fontawesome.com/9d9796826b.js" crossorigin="anonymous"></script>
+
+<body>
+<!---- Bootstrap Script---->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<!--Heading-->
+<div>
+  <nav class="navbar fixed-top bg-light d-flex justify-content-between">
+    <div class="container-fluid">
+      <a class="navbar-brand" ><i class="fa-solid fa-tractor"style="margin-right: 6%;"></i>KrishiSevaRenatals</a>
+      <div class="d-flex">
+        
+        <a href="/krishiSevaRentals/home.html" style="color: black;">  <i class="fa-solid fa-house fa-xl" style="margin-left: 4%;"></i></a>
+        <a href="#shopping-cart" style="color: black;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
+      </div>
+    </div>
+  </nav>
+
+
+ 
+
+
+<!-- Item Categories-->
+<section id="category">
+  <div class="container-fluid">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class=" col">
+        <div class="card">
+          <img src="images/machine-1.jpeg" class="card-img-top" alt="...">
+        </div>
+      </div>
+
+      <div class=" col">
+        <div class="card">
+          <img src="images/machine-2.jpeg" class="card-img-top" alt="...">
+        </div>
+      </div>
+
+      <div class=" col">
+        <div class="card">
+          <img src="images/machine-3.jpeg" class="card-img-top" alt="...">
+        </div>
+      </div>
+
+      <div class=" col">
+        <div class="card">
+          <img src="images/img/machine-5.jpg" class="card-img-top" alt="..." >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+<a href="#category" class="up-icon"><i class="fa-solid fa-circle-chevron-up"></i></a>
+ 
+
+<!----------------------------------------------------------------------------------->
+<img src="images/steps-line.png" style="width: 100%; height: 100%; overflow: hidden;">
+ 
+ 
+<!----------------------------------------------------------------------------------->
+<!--Filter Button-->
+<div class = "filter-btns">
+  <a href="rent2.html"><button type="button" class="filter-btn" id="refresh"><i class="fa-solid fa-rotate" ></i> Refresh</button></a>
+   
+  <button type = "button" class = "filter-btn" id = "all">all</button>
+  <button type = "button" class = "filter-btn" id = "new">new</button>
+  <button type = "button" class = "filter-btn" id = "office-wear">Tractors</button>
+  <button type = "button" class = "filter-btn" id = "t-shirts">Tillers</button>
+  <button type = "button" class = "filter-btn" id = "offers">Seeders</button>
+</div>
+
+
+<!--Product Cards-->
+<section id="product-cards">
+  <div class="container-fluid">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      
+      <!-- Card 1 -->
+      <div class="col filter-item all new">
+        <div class="card h-100 product-card">
+          <img src="images/img/ripper.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Ripper</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Ideal for ripping soil for better cultivation</p>
+            <p>Durable and easy to use</p>
+            <p>Cost-effective for small-scale farms</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col filter-item all new">
+        <div class="card h-100 product-card">
+          <img src="images/img/hydraulic-harrow-heavy-series-with-oil-bath-hub.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Hydraulic Harrow</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Hydraulic harrow with heavy-duty series</p>
+            <p>Oil bath hub for smooth operation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col filter-item all new">
+        <div class="card h-100 product-card">
+          <img src="images/img/heavy-duty-sub-soiler.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Sub Soilers</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Heavy-duty sub soiler for deep tilling</p>
+            <p>Improves soil aeration and drainage</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col filter-item all new">
+        <div class="card h-100 product-card">
+          <img src="images/img/happy-seeder.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Seeder</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Precision seeder for efficient planting</p>
+            <p>Best suited for small to medium fields</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional cards follow the same pattern -->
+      <!-- Card 5 -->
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/zero-till.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Zero Till</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Zero till farming machine for conservation agriculture</p>
+            <p>Helps reduce soil disturbance</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Continue adding similar cards as needed... -->
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/post-hole-digger.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Post Hole Digger</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Compatible with category 1 and category 2 tractors (18 HP to 100 HP).<br>
+              Can create 6 in., 9 in., and 12 in. narrow holes.<br>
+              Heavy-duty gearbox with PTO driveline.</p>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/pneumatic-planter.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Pneumatic-Planter</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Superior speed and constant planting depth.<br>
+              Available in disc type, vary space, and foldable models.<br>
+              Ideal for planting corn, sunflower, soybean, and more.</p>
+           
+          </div>
+        </div>
+      </div>
+            
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/sugar-cane-loader.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Sugar-cane-loader</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Zero till farming machine for conservation agriculture</p>
+            <p>Helps reduce soil disturbance</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/multi-crop-harvester-with-ac-cabin.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Combine harvester</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Dual-rotor or single-rotor configurations.<br>
+              Industry’s largest grain tank.<br>
+              Fuel-efficient engine.<br>
+              Automation, connectivity, and technology.</p>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/fertilizer-spreader.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Fertilizer-Spreader</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Spreading width of up to 46 ft.<br>
+              Suitable for 18-35 HP tractors.<br>
+              Heavy-duty ripper shanks.</p>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/box-blade.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Box Blade</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Heavy-duty steel rear-mounted box blade.
+              <br>
+              Adjustable ripper shanks.
+              <br>
+              Suitable for 20-45 HP tractors.
+              <br>
+              Designed for breaking up tough ground.</p>
+           
+          </div>
+        </div>
+      </div>
+      
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/eco-planer-laser-guided-land-leveler.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Leveler</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Zero till farming machine for conservation agriculture</p>
+            <p>Helps reduce soil disturbance</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/square-baler.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Square-baler</h5>
+            <p class="card-text shop-item-price">Rs 750.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Square-baler helps farming machine for conservation agriculture</p>
+            <br>
+            <p>Helps reduce soil disturbance</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/Tractor1-removebg-preview.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Basic Tractor</h5>
+            <p class="card-text shop-item-price">Rs 1000.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Easy to operate tractor for small-scale farming</p>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="col filter-item all office-wear">
+        <div class="card h-100 product-card">
+          <img src="images/img/Tractor3-removebg-preview.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Intermediate Tractor</h5>
+            <p class="card-text shop-item-price">Rs 1000.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Versatile mid-sized tractors for farms and worksites.
+              <br>
+              Choose from five frames.
+              <br>
+              Features: Power, comfort, and various transmission options.</p>
+            <p>Compact, efficient tractor with 36.7 hp.
+              <br>
+              Ideal for small farms and tasks</p>
+          </div>
+        </div>
+      </div>
+      
+            
+            <div class="col filter-item all offers">
+        <div class="card h-100 product-card">
+          <img src="images/img/Tractor5-removebg-preview.png" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Advanced Tractor</h5>
+            <p class="card-text shop-item-price">Rs 1000.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+              <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+            </button>
+          </div>
+          <!-- Hover overlay with product details -->
+          <div class="product-details-overlay">
+            <p>Powerful tractor with advanced features</p>
+            <p>Suitable for large-scale farming</p>
+            <p>Fuel-efficient and durable</p>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+
+<!--Shopping Cart-->
+<section class="container content-section" id="shopping-cart">
+  
+  <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+ 
+ <table class="table table-hover table-cart">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody class="cart-items">
+    
+     
+  </tbody>
+</table>
+
+    <div class="cart-total"> 
+      <strong class="cart-total-title">Total</strong>
+      <span  class="cart-total-price" style="text-align: right;">$0</span>
+    </div>
+ 
+
+    <div class="btn-purchase" style="margin-top: 10%;">
+      <button type="button" id="rzp-button1"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
+      <html>
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <script>
+          var options = {
+            "key": "rzp_test_VUY9gO82tG1T9Z", // Enter the Key ID generated from the Dashboard
+            "amount": "300000",
+            "currency": "INR",
+            "description": "Pay to KrishiSevaRenatals",
+            "image": "example.com/image/rzp.jpg",
+            "prefill":
+            {
+              "email": "deanluck07@gmail.com",
+              "contact": "9004603888",
+            },
+            config: {
+              display: {
+                blocks: {
+                  utib: { //name for Axis block
+                    name: "Pay Using Axis Bank",
+                    instruments: [
+                      {
+                        method: "card",
+                        issuers: ["UTIB"]
+                      },
+                      {
+                        method: "netbanking",
+                        banks: ["UTIB"]
+                      },
+                    ]
+                  },
+                  other: { //  name for other block
+                    name: "Other Payment Methods",
+                    instruments: [
+                      {
+                        method: "card",
+                        issuers: ["ICIC"]
+                      },
+                      {
+                        method: 'netbanking',
+                      },
+                      {
+                      method: "upi"
+                      }
+                    ]
+                  }
+                },
+                hide: [
+                ],
+                sequence: ["block.utib", "block.other"],
+                preferences: {
+                  show_default_blocks: false // Should Checkout show its default blocks?
+                }
+              }
+            },
+            "handler": function (response) {
+              alert(response.razorpay_payment_id);
+            },
+            "modal": {
+              "ondismiss": function () {
+                if (confirm("Are you sure, you want to close the form?")) {
+                  txt = "You pressed OK!";
+                  console.log("Checkout form closed by the user");
+                } else {
+                  txt = "You pressed Cancel!";
+                  console.log("Complete the Payment")
+                }
+              }
+            }
+          };
+          var rzp1 = new Razorpay(options);
+          document.getElementById('rzp-button1').onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+          }
+        </script>
+        </html>
+        </body>
+        </html>
+    </div>
+
+</section>
+ 
+<!--Footer-->
+<section id="footer">
+  <div class="card text-center">
+   
+    <div class="card-body">
+      <h3 class="card-title"><i class="fa-solid fa-tractor" style="margin-right: 1%;"></i>KrishiSevaRenatals</h3>
+      <p>Thank You , Come Again !!!</p>
+    </div>
+    <div class="card-footer text-muted">
+       <p></p>
+       <p></p>
+    </div>
+  </div>
+</section>
+
+
+
+ 
+
+<!--External JS-->
+<script src="script.js"></script>
+
+</body>
+</html>

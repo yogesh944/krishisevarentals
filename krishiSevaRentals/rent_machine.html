@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rent_machine.css">
+    <script defer src="serach_bar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Agricultural Products</title>
+</head>
+<body>
+    <header>
+        <h1>Agricultural Products</h1>
+        <img class="logo"src="krishi.jpg" alt="KrishiSevaRentals" title="KrishiSevaRentals">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <section class="cart-section" >
+            <h1 style="text-align: left;">Shopping Cart <i class="fa-solid fa-cart-arrow-down"></i></h1>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <button id="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </section>
+        
+    </header>
+
+    <section>
+        <div class="search_bar">
+            <div class="search_img">
+                <img src="Search_img.png" alt="search_image">
+            </div>
+            <input type="text" placeholder="Quick Search" id="quick_search">
+        </div>
+    </section>
+
+   
+       
+
+      
+
+    <section class="product-section">
+        <h1 style="text-align: center;">Tillage</h1>
+        <div class="container">
+            <div class="box">
+                <img src="img/ripper.png" alt="Product 1">
+                <h3>Ripper</h3>
+                <p>Price: 100/day<br>Contact:9822752490</p>
+                
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="box">
+                <img src="img/hydraulic-harrow-heavy-series-with-oil-bath-hub.png" alt="Product 2">
+                <h3>hydraulic-harrow</h3>
+                <p>Price:  600/day<p>Contact:4573469306</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/heavy-duty-sub-soiler.png" alt="Product 3">
+                <h3>Sub Soilers</h3>
+                <p>Price: 400/day<p>Contact:5287410693</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="product-section">
+        <h1 style="text-align: center;">Tractor</h1>
+        <div class="container">
+            <div class="box">
+                <img src="img/Tractor1.jpg" alt="Product 1">
+                <h3>Regular Tractor</h3>
+                <p>Price: 500/day<br>Contact:9164378025</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/Tractor2.jpg" alt="Product 2">
+                <h3>Heavy Tractor</h3>
+                <p>Price: 800/day<br>Contact:9571354862</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/Tractor3.jpg" alt="Product 3">
+                <h3>Utility Tractor</h3>
+                <p>Price: 450/day<br>Contact:8456127853</p>
+                <button class="add-to-cart" >Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/Tractor4.jpg" alt="Product 3">
+                <h3>Row Crop Tractor</h3>
+                <p>Price: 400/day<br>Contact:9371826472</p>
+                <button class="add-to-cart" >Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/Tractor5.jpg" alt="Product 2">
+                <h3>Farm Tractor</h3>
+                <p>Price: 500/day<br>Contact:9146921800</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    
+    
+    <section class="product-section">
+        <h1 style="text-align: center;">Seeding</h1>
+        <div class="container">
+            <div class="box">
+                <img src="img/happy-seeder.png" alt="Product 1">
+                <h3>Seeder</h3>
+                <p>Price: 450/day<br>Contact:8275127745</p>
+                <button class="add-to-cart" data-product="Seeder">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/zero-till.png" alt="Product 2">
+                <h3>Zero Till</h3>
+                <p>Price: 400/day<br>Contact:9420676980</p>
+                <button class="add-to-cart" data-product="Zero Till">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/post-hole-digger.png" alt="Product 3">
+                <h3>Post Hole Digger</h3>
+                <p>Price: 500/day<br>Contact:4582975613</p>
+                <button class="add-to-cart" data-product="Post Hole Digger">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/pneumatic-planter.png" alt="Product 3">
+                <h3>Pneumatic-planter</h3>
+                <p>Price: 400/day<br>Contact:7894563021</p>
+                <button class="add-to-cart" data-product="Pneumatic-planter">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section class="product-section">
+        <h1 style="text-align: center;">Harvest & Straw Management</h1>
+        <div class="container">
+            <div class="box">
+                <img src="img/multi-crop-harvester-with-ac-cabin.png" alt="Product 1">
+                <h3>Multi-crop-harvester</h3>
+                <p>Price: 600/day<br>Contact:9638521470</p>
+                <button class="add-to-cart" data-product="Multi-crop-harvester">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/sugar-cane-loader.png" alt="Product 2">
+                <h3>Sugar-cane-loader</h3>
+                <p>Price: 450/day<br>Contact:9764302848</p>
+                <button class="add-to-cart" data-product="Sugar-cane-loader">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/multi-crop-harvester.png" alt="Product 3">
+                <h3>Combine harvester</h3>
+                <p>Price: 400/day<br>Contact:9955248130</p>
+                <button class="add-to-cart" data-product="Combine harvester">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/rotary-mulcher.png" alt="Product 3">
+                <h3>Rotary-mulcher</h3>
+                <p>Price: 500/day<br>Contact:8794653218</p>
+                <button class="add-to-cart" data-product="Rotary-mulcher">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/hay-rake.png" alt="Product 3">
+                <h3>Hay Rake</h3>
+                <p>Price: 300/day<br>Contact:9485652490</p>
+                <button class="add-to-cart" data-product="Hay Rake">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/square-baler.png" alt="Product 3">
+                <h3>Square-baler</h3>
+                <p>Price: 450/day<br>Contact:7846152939</p>
+                <button class="add-to-cart" data-product="Square-baler">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="product-section">
+        <h1 style="text-align: center;">Landscaping</h1>
+        <div class="container">
+            <div class="box">
+                <img src="img/landscape-rake.png" alt="Product 1">
+                <h3>Landscape-rake</h3>
+                <p>Price: 200/daybr>Contact:3126459768</p>
+                <button class="add-to-cart" data-product="Landscape-rake">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/eco-planer-laser-guided-land-leveler.png" alt="Product 2">
+                <h3>Leveler</h3>
+                <p>Price: 650/day<br>Contact:9822746513</p>
+                <button class="add-to-cart" data-product="Leveler">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/rotary-cutter.png" alt="Product 3">
+                <h3>Rotary-cutter</h3>
+                <p>Price: 550/day<br>Contact:9145876205</p>
+                <button class="add-to-cart" data-product="Rotary-cutter">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/box-blade.png" alt="Product 3">
+                <h3>Box Blade</h3>
+                <p>Price: 400/day<br>Contact:8565327215</p>
+                <button class="add-to-cart" data-product="Box Blade">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section class="product-section">
+        <h1 style="text-align: center;">Crop Protection</h1>
+        <div class="container">
+            <div class="box">
+                <img src="img/boom-sprayer.png" alt="Product 1">
+                <h3>Boom Sprayer</h3>
+                <p>Price: 400/day<br>Contact:9578463216</p>
+                <button class="add-to-cart" data-product="Boom Sprayer">Add to Cart</button>
+            </div>
+
+            <div class="box">
+                <img src="img/fertilizer-spreader.png" alt="Product 2">
+                <h3>Fertilizer-spreader</h3>
+                <p>Price: 600/day<br>Contact:8476525924</p>
+                <button class="add-to-cart" data-product="Fertilizer-spreader">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+</html>
+

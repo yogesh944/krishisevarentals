@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('aerial-drone-view-harvester-gathering-crops.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 16px;
+    padding: 40px;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #388e3c;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    font-size: 14px;
+    color: #388e3c;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #388e3c;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2c6d29;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+    }
+}
