@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/krishiSevaRentals/index.html" }
+    {
+      "source": "/",
+      "destination": "/krishiSevaRentals/home.html"
+    }
   ]
 }
