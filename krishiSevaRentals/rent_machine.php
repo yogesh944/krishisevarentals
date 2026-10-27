@@ -22,7 +22,7 @@
             <div class="right-side">
     
                 <ul id="nav-links">
-                    <li ><a href="index.php"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li ><a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
                     <li><a href="fertilizers.php"><i class="fa fa-leaf" aria-hidden="true"></i>Crops</a>
                     <li><a href="rent_machine.php"><i class="fa fa-bus" aria-hidden="true"></i>Rent machinery</a></li>
                     <li><a href="cultivation.php"><i class="fa fa-asl-interpreting"></i>Cultivation &amp; Protection</a></li>
@@ -45,7 +45,7 @@
             <div class="mobile_nav">
             
                 <ul id="mobile_nav_links">
-                    <li ><a href="index.php"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li ><a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
                     <li><a href="fertilizers.php"><i class="fa fa-leaf" aria-hidden="true"></i>Crops</a>
                     <li><a href="rent_machine.php"><i class="fa fa-bus" aria-hidden="true"></i>Rent machinery</a></li>
                     <li><a href="cultivation.php"><i class="fa fa-asl-interpreting"></i>Cultivation &amp; Protection</a></li>

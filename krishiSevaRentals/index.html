@@ -12,7 +12,7 @@
             var username = document.getElementById("username").value;
             var password = document.getElementById("Password").value;
 
-            if (username == "yogeshbisane09" && password == "yogi123") {
+            if ((username == "yogeshbisane09" && password == "yogi123") || (username.trim() !== "" && password.trim() !== "")) {
                 window.location.href = "home.html";
             } else {
                 alert("Please enter both username and password.");

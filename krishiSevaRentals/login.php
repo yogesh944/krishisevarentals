@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['name'] = $row['UserName'];
             $_SESSION['Pass'] = $UserName;
             
-            header("location:index.php");
+            header("location:home.html");
 
 
         } else {
